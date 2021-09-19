@@ -92,6 +92,7 @@ const TodoList = styled("ul", {
   width: "80%",
   transition: "$transi100",
   color: "$texts",
+  wordBreak: "break-all",
 
   "@media(min-width: 620px)": {
     width: "80%",

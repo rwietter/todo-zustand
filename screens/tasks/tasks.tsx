@@ -27,7 +27,7 @@ const Tasks = () => {
           <h1>O que deseja fazer hoje ?</h1>
           <St.with.Task>
             <St.with.Label htmlFor="task">Tarefa</St.with.Label>
-            <Input type="text" name="task" id="task" />
+            <Input type="text" name="task" id="task" maxLength={50} />
             <Button type="submit">Salvar</Button>
           </St.with.Task>
         </St.with.Form>
