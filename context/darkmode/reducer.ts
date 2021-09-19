@@ -5,7 +5,7 @@ const reducer = (state: any, { type, payload }: DarkModeAction) => {
     case Type.DARKMODE_THEME:
       return {
         ...state,
-        theme: state.theme === "light" ? "dark" : "light",
+        theme: state.theme === "dark" ? "light" : "dark",
         isMounted: true,
       };
   }
