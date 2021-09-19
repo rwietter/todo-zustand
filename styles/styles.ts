@@ -3,7 +3,7 @@ import { styled } from "@stitches/react";
 const Main = styled("main", {
   display: "grid",
   gridTemplateColumns: "1fr",
-  gridTemplateRows: "0.9fr 1fr",
+  gridTemplateRows: "20rem 1fr",
   placeContent: "start",
   placeItems: "center",
   padding: "0",
@@ -40,6 +40,8 @@ const Todo = styled("section", {
   alignItems: "center",
   justifyContent: "center",
   paddingBottom: "3rem",
+  justifySelf: "start",
+  alignSelf: "start",
 
   "@media(min-width: 720px)": {
     gridColumn: "2/3",

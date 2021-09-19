@@ -13,7 +13,8 @@ const Tasks = () => {
   const handleSubmit = (e: FormEvent) => {
     e?.preventDefault();
     const payload: string = (e.target as any).task.value;
-    return payload.trim().length > 0 && saveTask(payload);
+    payload.trim().length > 0 && saveTask(payload);
+    return (e.target as any).task.value = null;
   };
 
   const handleTaskDelete = (id: string) => deleteTask(id);

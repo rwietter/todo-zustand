@@ -1,9 +1,8 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { useEffect, useLayoutEffect } from "react";
+import { useEffect } from "react";
 import { Header } from "../components/header";
 import { useDarkModeStore } from "../context/darkmode";
-import { darkModeActions } from "../context/darkmode/actions";
 import { Tasks } from "../screens/tasks/tasks";
 import { darkTheme, lightTheme } from "../styles/theme";
 
